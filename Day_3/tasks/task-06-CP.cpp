@@ -2,10 +2,10 @@
 using namespace std ;
 main() 
 {
-	int sizeOfBag , costOfBag , area , costPerPound , costPerSquare ;
+	int sizeOfFertilizer , costOfBag , area , costPerPound , costPerSquare ;
 	
 	cout << "Enter the size of fertilizer bag in pounds : " ;
-	cin >> sizeOfBag ;
+	cin >> sizeOfFertilizer ;
 
 	cout << "Enter cost of the bag : $" ;
 	cin >> costOfBag ;
@@ -13,8 +13,8 @@ main()
 	cout << "Enter area in square feet that can be covered by the bag : " ;
 	cin >> area ;
 
-	costPerPound = costOfBag / sizeOfBag ;
-	costPerSquare = sizeOfBag * area ;
+	costPerPound = costOfBag / sizeOfFertilizer ;
+	costPerSquare = costOfBag / area ;
 
 	cout << "Cost of fertilizer per pound : $" << costPerPound << endl ;
 	cout << "Cost of fertilizer per square foot : $" << costPerSquare ;	
