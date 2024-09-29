@@ -33,7 +33,7 @@ main()
 		cout << "Enter Matric Marks : " ;
 		cin >> matricMarks ;
 	
-		cout << "Enter Matric Inter: " ;
+		cout << "Enter Inter Marks: " ;
 		cin >> interMarks ;
 
 		cout << "Enter Ecat Marks : " ;
