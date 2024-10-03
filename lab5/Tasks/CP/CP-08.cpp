@@ -3,16 +3,19 @@
 using namespace std;
 
 int individualSum(int number);
-void OddishOrEvenish(int checkNumber);
+string OddishOrEvenish(int checkNumber);
 main()
 {
-    int number, checkNumber;
+    int number , sum;
+    string checkNumber;
 
     cout << "Enter five digit number : ";
     cin >> number;
 
-    checkNumber = individualSum(number);
-    OddishOrEvenish(checkNumber);
+    sum = individualSum(number);
+   checkNumber= OddishOrEvenish(sum);
+
+   cout<<checkNumber;
 }
 
 int individualSum(int number)
@@ -29,14 +32,14 @@ int individualSum(int number)
     }
 }
 
-void OddishOrEvenish(int checkNumber)
+string OddishOrEvenish(int sum)
 {
-    if( checkNumber % 2 == 0)
+    if (sum % 2 == 0)
     {
-        cout << "Evenish";
+        return "Evenish";
     }
-    if( checkNumber % 2 != 0)
+    if (sum % 2 != 0)
     {
-        cout << "Oddish";
+        return "Oddish";
     }
 }
