@@ -24,6 +24,16 @@ string timeTravel ( int hour , int min)
     int totalTime = (hour * 60) + min + 15 ;
     int newHour = totalTime / 60 ;
     int newMin = totalTime % 60 ;
+
+    if (newHour==24)
+    {
+        newHour=0;
+    }    
+    if (newMin>=60)
+    {
+        newMin=0;
+    }
+    
     string hourInString = to_string(newHour);
     string minInString = to_string(newMin);
     string result = hourInString + ":" + minInString;
