@@ -5,7 +5,7 @@ main()
 {
     string screening;
     int rows, columns;
-    cout << "Enter the screening type ( Premiere / Normal / Discout ) : ";
+    cout << "Enter the screening type ( Premiere / Normal / Discount ) : ";
     cin >> screening;
 
     cout << "Enter the number of rows : ";
@@ -27,7 +27,7 @@ float totalIncome(string screening, int rows, int colums)
     {
         price = rows * colums * 7.50;
     }
-    if (screening == "Discout")
+    if (screening == "Discount")
     {
         price = rows * colums * 5.00;
     }
