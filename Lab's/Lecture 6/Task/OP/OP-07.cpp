@@ -16,15 +16,19 @@ main()
     cin >> price;
 
     payable = findPayable(day, month, price);
-    cout << "Payable Amount after discount: " << payable ;
+    cout << "Payable Amount after discount: " << payable;
 }
+
 float findPayable(string day, string month, float price)
 {
     float totalPrice = price;
-
-    if ((month == "October" && day == "Sunday") || month == "March" || month == "August")
+    if (day == "Sunday")
     {
-        totalPrice = totalPrice - (totalPrice * 0.1);
+        if ((month == "October") || month == "March" || month == "August")
+        {
+            totalPrice = totalPrice - (totalPrice * 0.1);
+        }
     }
+
     return totalPrice;
 }
