@@ -10,7 +10,6 @@ int calculatePayable(int price, int taxPercentage);
 void horizontalLine();
 void displayData(string itemName, float price, int tax, float payable);
 void displayTableHeader();
-// void displayResult(string itemName1,string itemName2,string itemName3,float price1,float price2,float price3,intt tax1,intt tax2,intt tax3,float payablePrice1float ,payablePrice2,float payablePrice3);
 main()
 {
     string itemName1, itemName2, itemName3;
@@ -52,7 +51,6 @@ main()
             displayData(itemName2, price2, tax2, payablePrice2);
             displayData(itemName3, price3, tax3, payablePrice3);
             horizontalLine();
-            // displayResult(itemName1,itemName2,itemName3,price1,price2,price3,tax1,tax2,tax3,payablePrice1,payablePrice2,payablePrice3);
         }
     }
 }
