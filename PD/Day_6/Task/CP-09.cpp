@@ -27,7 +27,7 @@ main()
 string checkPointPosition(int h, int x, int y)
 {
     // to check point is on border or not
-    if ((x % h == 0 || y % h == 0) && ((x >= h && x <= (h + h) && y >= 0 && y <= (4 * h)) || (x >= (h + h) && x <= (h + h + h))))
+    if ((x % h == 0 || y % h == 0) && ((x >= h && x <= (h + h) && y >= 0 && y <= (4 * h)) || (x >= (h + h) && x <= (h + h + h) && y>=0 && y<=h)))
     {
         return "Border";
     }
